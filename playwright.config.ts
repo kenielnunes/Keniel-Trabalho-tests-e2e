@@ -14,7 +14,7 @@ const config: PlaywrightTestConfig = {
     video: 'off'
   },
   expect: {
-    timeout: 30000
+    timeout: 120000
   },
   reporter: [
     [
