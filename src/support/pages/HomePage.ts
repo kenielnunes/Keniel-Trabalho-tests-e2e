@@ -11,7 +11,12 @@ export default class HomePage extends BasePage {
   }
 
   async closeAd() {
-    await this.homeElements.getAdButton().click();
+    const adButton = this.homeElements.getAdButton();
+
+    // Verifica se o botão de fechar o anúncio está visível
+    if (await adButton.isVisible()) {
+      await adButton.click();
+    }
   }
 
   async setMoviesPage() {

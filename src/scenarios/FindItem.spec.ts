@@ -32,6 +32,7 @@ test.describe('Testes E2E Ingresso.com', () => {
 
   test('Abre a pagina de um filme', async () => {
     // fecha o modal de anúncio inicial
+
     await homePage.closeAd();
 
     // vai para a página de filmes
